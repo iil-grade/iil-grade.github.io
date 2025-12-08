@@ -1,141 +1,241 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iil うなぎ等級サイト</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>U-GRADE うなぎ等級サイト</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-logo" aria-hidden="true">U</div>
-        <div class="brand-name">U-GRADE</div>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-logo" aria-hidden="true">i</div>
+          <div class="brand-name">iil</div>
+        </div>
+        <nav aria-label="ページ内ナビ" class="main-nav">
+          <a href="#hero">トップ</a>
+          <a href="#about">iilとは</a>
+          <a href="#grades">等級のご紹介</a>
+          <a href="#quality">品質</a>
+          <a href="#safety">安全</a>
+          <a href="#news">ニュース</a>
+        </nav>
       </div>
-      <nav aria-label="ページ内ナビ" class="main-nav">
-        <a href="#hero">トップ</a>
-        <a href="#about">U-GRADEとは</a>
-        <a href="#grades">等級のご紹介</a>
-        <a href="#news">最新ニュース</a>
-      </nav>
+    </header>
+
+    <!-- ヒーロー -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>おいしさの基準、見える鰻</h1>
+        <p>うなぎ等級制度「iil」— 安心して選べる新しいスタンダード</p>
+        <div class="hero-ctas" role="group" aria-label="ヒーローのアクション">
+          <button class="btn-primary" data-scroll="#grades">等級を見る</button>
+          <button class="btn-outline" data-scroll="#about">
+            認定うなぎを探す
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- コンセプト -->
+    <!-- 試験的なデモである旨の注意文 (U-GRADEとは？ の上に配置) -->
+    <div class="site-notice" role="note" aria-live="polite">
+      このサイトは試験的なデモです。掲載内容は参考情報であり、正式な認定情報ではありません。
     </div>
-  </header>
-  
-  <!-- ヒーロー -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>おいしさの基準、見える鰻</h1>
-      <p>うなぎ等級制度「U-GRADE」— 安心して選べる新しいスタンダード</p>
-      <div class="hero-ctas" role="group" aria-label="ヒーローのアクション">
-        <button class="btn-primary" data-scroll="#grades">等級を見る</button>
-        <button class="btn-outline" data-scroll="#about">認定うなぎを探す</button>
-      </div>
-    </div>
-  </section>
 
-  <!-- コンセプト -->
-  <!-- 試験的なデモである旨の注意文 (U-GRADEとは？ の上に配置) -->
-  <div class="site-notice" role="note" aria-live="polite">
-    このサイトは試験的なデモです。掲載内容は参考情報であり、正式な認定情報ではありません。
-  </div>
+    <section id="about">
+      <h2>iilとは？</h2>
+      <p style="max-width: 700px; margin: auto 0 2rem">
+        鰻をもっと安心して選べるように。味・香り・技・育成環境を総合的に評価した、日本初のうなぎ等級制度です。生産者の情熱と職人の技を、消費者の皆さまへ正しく届けます。
+      </p>
+      <div class="grid grid-3">
+        <div class="card">
+          <div style="font-size: 2rem">👨‍🌾</div>
+          <h3>生産者の情熱</h3>
+          <p>丹念に育てた鰻を一尾ずつ丁寧に選別。</p>
+        </div>
+        <div class="card">
+          <div style="font-size: 2rem">⭐</div>
+          <h3>公正な審査</h3>
+          <p>養殖期間・大きさ・脂質・においの4項目を第三者機関が厳正に評価。</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>U-GRADEとは？</h2>
-    <p style="max-width:700px;margin:auto 0 2rem;">
-      鰻をもっと安心して選べるように。味・香り・技・育成環境を総合的に評価した、日本初のうなぎ等級制度です。生産者の情熱と職人の技を、消費者の皆さまへ正しく届けます。</p>
-    <div class="grid grid-3">
-      <div class="card">
-        <div style="font-size:2rem;">👨‍🌾</div>
-        <h3>生産者の情熱</h3>
-        <p>丹念に育てた鰻を一尾ずつ丁寧に選別。</p>
+    <section id="grades" style="background: #f9fafb">
+      <h2>等級のご紹介</h2>
+      <div class="grid grid-5">
+        <div class="card">
+          <img src="特秀.png" alt="特秀" />
+          <p>脂ののり・身の締まり・香ばしさすべてが最高品質。</p>
+          <button class="btn-primary">詳しく見る</button>
+        </div>
+        <div class="card">
+          <img src="秀.png" alt="秀" />
+          <p>最高品質に近い優れた品質。</p>
+          <button class="btn-primary">詳しく見る</button>
+        </div>
+        <div class="card">
+          <img src="優.png" alt="優" />
+          <p>味と品質のバランスに優れた品質。</p>
+          <button class="btn-primary">詳しく見る</button>
+        </div>
+        <div class="card">
+          <img src="良.png" alt="良" />
+          <p>良好な品質の一本。</p>
+          <button class="btn-primary">詳しく見る</button>
+        </div>
+        <div class="card">
+          <img src="可.png" alt="可" />
+          <p>気軽に楽しめる手軽な一本。</p>
+          <button class="btn-primary">詳しく見る</button>
+        </div>
       </div>
-      <div class="card">
-        <div style="font-size:2rem;">🔥</div>
-        <h3>焼きの技</h3>
-        <p>職人の手で焼き上げる香ばしい香りとふっくら食感。</p>
-      </div>
-      <div class="card">
-        <div style="font-size:2rem;">⭐</div>
-        <h3>公正な審査</h3>
-        <p>第三者機関による厳正な品質評価を実施。</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 等級紹介 -->
-  <section id="grades" style="background:#f9fafb;">
-    <h2>等級のご紹介</h2>
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="unagi1.jpg" alt="Aグレード">
-        <h3>Aグレード</h3>
-        <p>脂ののり・身の締まり・香ばしさすべてが最高品質。</p>
-        <button class="btn-primary">詳しく見る</button>
+    <!-- 品質に関する情報 -->
+    <section id="quality" style="background: #f0fdf4">
+      <h2>品質に関する評価項目</h2>
+      <p
+        style="
+          max-width: 800px;
+          margin: 0 auto 2rem;
+          text-align: center;
+          color: #666;
+        "
+      >
+        iilの認定鰻は、以下の4つの品質評価項目を厳正に評価しています。
+      </p>
+      <div class="evaluation-grid">
+        <div class="evaluation-item">
+          <h4>養殖期間</h4>
+          <p>健全で持続的な成長を遂げた鰻</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>大きさ</h4>
+          <p>適切なサイズと体の均衡</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>脂質</h4>
+          <p>脂のノリと美しい見た目</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>におい</h4>
+          <p>香ばしさと新鮮な香りの調和</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="unagi1.jpg" alt="Bグレード">
-        <h3>Bグレード</h3>
-        <p>味と価格のバランスに優れた定番品質。</p>
-        <button class="btn-primary">詳しく見る</button>
-      </div>
-      <div class="card">
-        <img src="unagi1.jpg" alt="Cグレード">
-        <h3>Cグレード</h3>
-        <p>気軽に楽しめる手軽な一本。</p>
-        <button class="btn-primary">詳しく見る</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ニュース -->
-  <section id="news">
-    <h2>最新ニュース</h2>
-    <div class="grid grid-2">
-      <div class="card" style="text-align:left;">
-        <h3>2025年 認定発表会 開催決定</h3>
-        <p>全国の生産者が集い、今年の認定鰻を発表します。</p>
+    <!-- 安全に関する情報 -->
+    <section id="safety" style="background: #f0fdf4">
+      <h2>安全に関する情報</h2>
+      <p
+        style="
+          max-width: 800px;
+          margin: 0 auto 2rem;
+          text-align: center;
+          color: #666;
+        "
+      >
+        すべての認定鰻は、以下の安全性基準を満たしています。透明性を重視し、生産から流通まで全ての情報を開示いたします。
+      </p>
+      <div class="evaluation-grid">
+        <div class="evaluation-item">
+          <h4>養殖場の所在地</h4>
+          <p>生産地を明確に開示</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>飼料名</h4>
+          <p>使用飼料の詳細を開示</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>医薬品名</h4>
+          <p>使用医薬品を完全開示</p>
+        </div>
+        <div class="evaluation-item">
+          <h4>水揚げ年月日</h4>
+          <p>鮮度を証明する日時開示</p>
+        </div>
+        <div
+          class="evaluation-item"
+          style="grid-column: 1 / -1; max-width: 300px; margin: 0 auto"
+        >
+          <h4>残留検査合格</h4>
+          <p>農薬・医薬品等の残留検査に合格した安全な鰻のみ認定</p>
+        </div>
       </div>
-      <div class="card" style="text-align:left;">
-        <h3>試食イベント@東京ミッドタウン</h3>
-        <p>U-GRADE認定鰻を実際に味わえる特別イベント。</p>
+
+      <div style="margin-top: 2rem; padding: 2rem; background: #fff; border-radius: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: bold; color: #16a34a; letter-spacing: 2px;">SAF-EEL</div>
+        <p style="color: #666; margin-bottom: 1rem;">上記の安全性基準をすべて満たした鰻には、<strong>SAF-EEL マーク</strong>を付与しています。このマークは、消費者の皆さまへ「安全」の証をお届けします。</p>
+        <p style="color: #16a34a; font-weight: bold; margin: 0;">SAF-EEL = SAFE + EEL（安全な鰻）</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- フッター -->
-  <footer>
-    <div class="social-icons">
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path
-            d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3A4.7 4.7 0 1016.7 13 4.7 4.7 0 0012 8.3zm6.3-3.6a1.1 1.1 0 11-1.1 1.1 1.1 1.1 0 011.1-1.1z" />
-        </svg>
-      </a>
-      <!-- YouTube -->
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path
-            d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31.9 31.9 0 0024 12a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.5 3.5-6.5 3.5z" />
-        </svg>
-      </a>
-      <!-- X (旧Twitter) -->
-      <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path
-            d="M22 3.1c-.7.3-1.5.6-2.2.7.8-.5 1.4-1.3 1.7-2.2-.7.4-1.6.7-2.4.9C18.4 1.6 17.3 1 16.1 1c-2 0-3.6 1.6-3.6 3.6 0 .3 0 .6.1.9C9.5 5.2 6.3 3.6 4.1 1.2c-.4.6-.6 1.3-.6 2.1 0 1.4.7 2.6 1.8 3.3-.6 0-1.1-.2-1.6-.4v.1c0 2 1.4 3.6 3.2 4-.3.1-.6.2-.9.2-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3 2.3-1.1.9-2.5 1.4-3.9 1.4H6c1.5.9 3.3 1.5 5.2 1.5 6.3 0 9.8-5.2 9.8-9.7v-.4c.7-.5 1.3-1.2 1.8-1.9-.6.3-1.3.4-2 .5z" />
-        </svg>
-      </a>
-    </div>
-    <p style="color:#6b7280;">#うなぎ等級 #U-GRADE</p>
-    <p style="color:#9ca3af;">© 2025 U-GRADE うなぎ格付け協会</p>
-  </footer>
+    <!-- ニュース -->
+    <section id="news">
+      <h2>最新ニュース</h2>
+      <div class="grid grid-2">
+        <div class="card" style="text-align: left">
+          <h3>2025年 認定発表会 開催決定</h3>
+          <p>全国の生産者が集い、今年の認定鰻を発表します。</p>
+        </div>
+        <div class="card" style="text-align: left">
+          <h3>試食イベント@東京ミッドタウン</h3>
+          <p>U-GRADE認定鰻を実際に味わえる特別イベント。</p>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- フッター -->
+    <footer>
+      <div class="social-icons">
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3A4.7 4.7 0 1016.7 13 4.7 4.7 0 0012 8.3zm6.3-3.6a1.1 1.1 0 11-1.1 1.1 1.1 1.1 0 011.1-1.1z"
+            />
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31.9 31.9 0 0024 12a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.5 3.5-6.5 3.5z"
+            />
+          </svg>
+        </a>
 
+        <a
+          href="https://x.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X"
+        >
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M22 3.1c-.7.3-1.5.6-2.2.7.8-.5 1.4-1.3 1.7-2.2-.7.4-1.6.7-2.4.9C18.4 1.6 17.3 1 16.1 1c-2 0-3.6 1.6-3.6 3.6 0 .3 0 .6.1.9C9.5 5.2 6.3 3.6 4.1 1.2c-.4.6-.6 1.3-.6 2.1 0 1.4.7 2.6 1.8 3.3-.6 0-1.1-.2-1.6-.4v.1c0 2 1.4 3.6 3.2 4-.3.1-.6.2-.9.2-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3 2.3-1.1.9-2.5 1.4-3.9 1.4H6c1.5.9 3.3 1.5 5.2 1.5 6.3 0 9.8-5.2 9.8-9.7v-.4c.7-.5 1.3-1.2 1.8-1.9-.6.3-1.3.4-2 .5z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p style="color: #6b7280">#iil #うなぎ等級制度 </p>
+      <p style="color: #9ca3af">© 2025 iil - 日本初のうなぎ等級制度</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

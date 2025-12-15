@@ -14,12 +14,16 @@
           <div class="brand-logo" aria-hidden="true">i</div>
           <div class="brand-name">iil</div>
         </div>
+        <button class="menu-toggle" aria-label="メニュー">☰</button>
+      
+
         <nav aria-label="ページ内ナビ" class="main-nav">
           <a href="#hero">トップ</a>
           <a href="#about">iilとは</a>
           <a href="#grades">等級のご紹介</a>
           <a href="#quality">品質</a>
           <a href="#safety">安全</a>
+          <a href="#trace">生産情報検索</a>
           <a href="#news">ニュース</a>
         </nav>
       </div>
@@ -32,7 +36,7 @@
         <p>うなぎ等級制度「iil」— 安心して選べる新しいスタンダード</p>
         <div class="hero-ctas" role="group" aria-label="ヒーローのアクション">
           <button class="btn-primary" data-scroll="#grades">等級を見る</button>
-          <button class="btn-outline" data-scroll="#about">
+          <button class="btn-outline" data-scroll="#trace">
             認定うなぎを探す
           </button>
         </div>
@@ -47,7 +51,7 @@
 
     <section id="about">
       <h2>iilとは？</h2>
-      <p style="max-width: 700px; margin: auto 0 2rem">
+      <p class="about-text">
         鰻をもっと安心して選べるように。味・香り・技・育成環境を総合的に評価した、日本初のうなぎ等級制度です。生産者の情熱と職人の技を、消費者の皆さまへ正しく届けます。
       </p>
       <div class="grid grid-3">
@@ -173,6 +177,77 @@
         <p style="color: #16a34a; font-weight: bold; margin: 0;">SAF-EEL = SAFE + EEL（安全な鰻）</p>
       </div>
     </section>
+
+    <!-- 生産情報検索 -->
+<section id="trace">
+  <h2>生産情報検索</h2>
+
+  <p style="text-align:center; color:#666; margin-bottom:1.5rem;">
+    生産情報公表養殖魚の識別番号を入力してください。
+  </p>
+
+  <div style="max-width: 500px; margin: 0 auto; text-align: center;">
+    <input
+      type="text"
+      id="lotInput"
+      placeholder="例：12345678900"
+      style="width: 100%; padding: 0.75rem; font-size: 1rem; margin-bottom: 1rem;"
+    />
+    <button class="btn-primary" id="searchBtn">検索</button>
+     <p
+  id="errorMessage"
+  style="
+    margin-top: 0.75rem;
+    color: #dc2626;
+    font-size: 0.9rem;
+    display: none;
+  "
+></p>
+
+
+    <p style="margin-top:1rem; font-size:0.9rem; color:#6b7280;">
+  【識別番号】は数字11桁で入力して下さい。<br>
+  ※サンプルに識別番号『<strong>12345678900</strong>』を入力してみてください。
+</p>
+
+<div
+  style="
+    margin-top: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.6;
+  "
+>
+
+
+<ol
+  style="
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    margin-left: 1.5rem;
+  "
+>
+  <li>生産情報公表養殖魚の識別番号を入力します。</li>
+  <li>検索ボタンをクリックします。</li>
+  <li>養殖魚の生産情報データが表示されます。</li>
+</ol>
+
+
+
+  </div>
+
+  <div id="result" style="margin-top: 3rem;"></div>
+</section>
+
+    
+
+
+
+
 
     <!-- ニュース -->
     <section id="news">

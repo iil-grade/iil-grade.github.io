@@ -540,3 +540,25 @@ footer {
   height: 180px;
   border-radius: 12px;
 }
+
+.producer-profile {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.photo-note {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.producer-info {
+  margin-top: 1rem;
+}
+/* 等級カードの画像 */
+#grades .card img {
+  width: 100%;
+  height: auto;        /* ← 固定しない */
+  object-fit: contain; /* ← 切らない */
+  display: block;
+}

@@ -104,53 +104,52 @@ function runSearch() {
   const d = sampleData[input];
 
   result.innerHTML = `
-  <div class="card" style="max-width: 900px; margin: 0 auto; text-align:left;">
-    <h3>生産者情報</h3>
+<div class="card" style="max-width: 900px; margin: 0 auto; text-align:left;">
+  <h3>生産者情報</h3>
 
-    <div class="producer-profile">
-      <img
-  src="${d.producer.photo}"
-  alt="生産者 ${d.producer.representative}"
-  class="producer-photo"
-/>
-
-
-      <div class="producer-info">
-        <p><strong>識別番号：</strong>${d.product.id}</p>
-        <p><strong>生産者名：</strong>${d.producer.name}</p>
-        <p><strong>代表者名：</strong>${d.producer.representative}</p>
-        <p><strong>住所：</strong>${d.producer.address}</p>
-        <p><strong>連絡先：</strong>${d.producer.contact}</p>
-        <p>
-          <strong>SAF-EEL マーク：</strong>
-          <span style="color:#16a34a; font-weight:600;">付与</span>
-        </p>
-      </div>
-    </div>
-
-    <p><strong>生産者コメント：</strong>${d.producer.comment}</p>
-
-    <hr style="margin:1.5rem 0;">
-
-    <h3>生産情報</h3>
-
-    <p><strong>管理開始日：</strong>${d.product.startDate}</p>
-    <p><strong>水揚げ年月日：</strong>${d.product.harvestDate}</p>
-    <p><strong>種苗の種類：</strong>${d.product.seedType}</p>
-
-    <p><strong>給餌した飼料：</strong></p>
-    <ul>
-      ${d.product.feed.map((f) => `<li>${f}</li>`).join("")}
-    </ul>
-
-    <p><strong>使用医薬品：</strong>${d.product.medicine}</p>
-    <p><strong>残留検査：</strong>合格</p>
-
-    <button class="btn-outline" onclick="window.print()">
-      生産情報データを印刷する
-    </button>
+  <!-- 写真エリア（横並びはここまで） -->
+  <div class="producer-profile">
+    <img
+      src="${d.producer.photo}"
+      alt="生産者 ${d.producer.representative}"
+      class="producer-photo"
+    />
+    <p class="photo-note">※掲載写真はサンプルです</p>
   </div>
+
+  <!-- 👇 ここからは通常の縦レイアウト -->
+  <div class="producer-info">
+    <p><strong>識別番号：</strong>${d.product.id}</p>
+    <p><strong>生産者名：</strong>${d.producer.name}</p>
+    <p><strong>代表者名：</strong>${d.producer.representative}</p>
+    <p><strong>住所：</strong>${d.producer.address}</p>
+    <p><strong>連絡先：</strong>${d.producer.contact}</p>
+    <p>
+      <strong>SAF-EEL マーク：</strong>
+      <span style="color:#16a34a; font-weight:600;">付与</span>
+    </p>
+  </div>
+
+  <p><strong>生産者コメント：</strong>${d.producer.comment}</p>
+
+  <hr style="margin:1.5rem 0;">
+
+  <h3>生産情報</h3>
+
+  <p><strong>給餌した飼料：</strong></p>
+  <ul>
+    ${d.product.feed.map((f) => `<li>${f}</li>`).join("")}
+  </ul>
+
+  <p><strong>使用医薬品：</strong>${d.product.medicine}</p>
+  <p><strong>残留検査：</strong>合格</p>
+
+  <button class="btn-outline" onclick="window.print()">
+    生産情報データを印刷する
+  </button>
+</div>
 `;
+
 
   // 検索結果が表示されたら少しスクロール
   result.scrollIntoView({ behavior: "smooth", block: "start" });
